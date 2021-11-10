@@ -174,7 +174,7 @@ class Habitacion(Model): # Clase Habitación es para modelar la habitación del 
     #pocisiona a los agentes del robot limpieza
     for id in range(num_agentes):
       r = RobotLimpieza(id, self)
-      self.grid.place_agent(r, (0, 0))
+      self.grid.place_agent(r, (1, 1))
       self.schedule.add(r)
 
     self.datacollector = DataCollector(
